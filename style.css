@@ -2,7 +2,9 @@ body {
     margin: auto;
     padding: 0;
     width: 1440px;
-    font-family: sans-serif;
+    font-family: "Fraunces-Regular";
+    font-weight: 700;
+    background: hsl(0, 0%, 100%);
 }
 
 .bg-img {
@@ -19,10 +21,16 @@ body {
 }
 
 .bg-img h1 {
+    font-family: "Barlow-Regular";
+    font-weight: 900;
     color: hsl(0, 0%, 100%);
     font-size: 90px;
     margin: 0;
-    padding-top: 20%;
+    padding-top: 15%;
+}
+
+.bg-img svg {
+    margin-top: 9rem;
 }
 
 
@@ -30,8 +38,31 @@ body {
 
 .menu {
     position: absolute;
-    margin: 20px;
-    width: auto;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.top ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.top ul li {
+    color: hsl(0, 0%, 100%);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.top ul li:hover {
+    color: black;
+    background: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 .row {
@@ -45,4 +76,34 @@ body {
 .column img {
     width: 100%;
     height: 100%;
+}
+
+.column div {
+    margin: 25% auto auto auto;
+    width: 58%;
+}
+
+.column div h2 {
+    color: hsl(212, 27%, 19%);
+    font-size: 50px;
+}
+
+.column div p {
+    font-weight: 100;
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.profil {
+    text-align: center;
+    width: 25%;
+}
+
+.profil img {
+    width: 20%;
+    border-radius: 50%;
 }
