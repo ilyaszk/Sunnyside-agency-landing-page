@@ -2,7 +2,7 @@ body {
     margin: auto;
     padding: 0;
     width: 1440px;
-    font-family: "Fraunces-Regular";
+    font-family: sans-serif;
     font-weight: 700;
     background: hsl(0, 0%, 100%);
 }
@@ -84,18 +84,59 @@ body {
 }
 
 .column div h2 {
+    font-family: "Barlow-Regular";
     color: hsl(212, 27%, 19%);
     font-size: 50px;
 }
 
-.column div p {
+.cerise,
+.orange {
+    flex: 50%;
+    position: relative;
+}
+
+.text-img1,
+.text-img2 {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 60%;
+    color: hsl(143, 15%, 37%);
+    width: 47%;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
     font-weight: 100;
+}
+
+.personne {
+    text-align: center;
+    margin: 10% 0 10% 0;
+}
+
+.personne h2 {
+    font-family: "Barlow-Regular";
+    color: hsl(232, 10%, 55%);
+    letter-spacing: 0.4rem;
 }
 
 .presentation {
     display: flex;
+    margin: 3% 0 0 0;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.presentation p:last-of-type {
+    color: hsl(232, 10%, 55%);
+    font-weight: 100;
 }
 
 .profil {
@@ -106,4 +147,38 @@ body {
 .profil img {
     width: 20%;
     border-radius: 50%;
+}
+
+.row-img {
+    display: flex;
+}
+
+.row-img img {
+    max-width: 25%;
+}
+
+footer {
+    color: hsl(167, 33%, 23%);
+    height: 20rem;
+    text-align: center;
+    background: hsl(168, 37%, 55%);
+}
+
+.lien {
+    padding-top: 5%;
+}
+
+.lien ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.lien ul li {
+    padding: 1rem 2rem 3rem 2rem;
+}
+
+.contact img {
+    padding: 1rem 1rem 3rem 1rem;
 }
